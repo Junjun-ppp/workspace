@@ -8,9 +8,10 @@ sample_size = 1000
 random_walk = np.cumsum(np.random.normal(0, 1, sample_size))
 
 # プロットの設定
-plt.figure(figsize=(10, 5))
+plt.figure(figsize=(10, 6))
+plt.rcParams["font.size"] = 18.5
 plt.plot(random_walk, color='r', label='Random Walk')
-plt.title('(Non-Stationary Data Examples (Random Walk)')
+plt.title('Non-Stationary Data Examples (Random Walk)')
 plt.xlabel('Time')
 plt.ylabel('Value')
 plt.grid(True)

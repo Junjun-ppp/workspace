@@ -11,7 +11,8 @@ white_noise = np.random.normal(0, 1, sample_size)
 mean = np.mean(white_noise)
 
 # プロットの設定
-plt.figure(figsize=(10, 5))
+plt.figure(figsize=(10, 6))
+plt.rcParams["font.size"] = 18.5
 plt.plot(white_noise, color='b', label='White Noise')
 plt.axhline(y=mean, color='r', linestyle='-', label='Mean')
 plt.title('Stationary Data Examples (White Noise)')
